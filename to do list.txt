@@ -26,4 +26,9 @@ fonctions.php :
         (4212) -getEmployesParDepartement($dept_no)
 
 
+4. PAGES
+    (4212)employes.php:
+    -Recupère tous les employes du departement donne
+    -Affiche tableau (numero, nom, date embauche)
+    -Bouton retour vers index
 
