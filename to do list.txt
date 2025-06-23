@@ -16,3 +16,4 @@ test_db-master/
 ├── includes/ : connexion.php, deconnexion.php, fonctions.php
 ├── PAGES/ :bootstrap + index.php, employes.php
 ├── SQL/ : employees.sql et tous les autres.sql
+
