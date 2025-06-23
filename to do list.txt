@@ -27,3 +27,4 @@ fonctions.php :
 
 fonctions.php :
        (4352) -getDepartementsAvecManager()
+         (4212) -getEmployesParDepartement($dept_no)
