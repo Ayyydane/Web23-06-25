@@ -40,5 +40,4 @@ function getEmployesParDepartement($dept_no) {
 
     return $donnees;
 }
-
 ?>
