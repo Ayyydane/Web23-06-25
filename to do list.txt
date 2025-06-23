@@ -8,7 +8,7 @@
     show databases;
     use employees;
     select * from departments;
-    
+
 (OK)2. STRUCTURER LES DOSSIERS :
     Creer dans htdocs/test_db-master/ :
 test_db-master/
@@ -16,3 +16,6 @@ test_db-master/
 ├── includes/ : connexion.php, deconnexion.php, fonctions.php
 ├── PAGES/ :bootstrap + index.php, employes.php
 ├── SQL/ : employees.sql et tous les autres.sql
+
+ 3. INCLUDES:
+   (4352) connexion.php : connexion a la base de donnees
