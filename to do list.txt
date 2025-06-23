@@ -1,0 +1,18 @@
+(OK)1. INSTALLATION :
+    Telecharger : https://github.com/datacharmer/test_db
+    Extraire dans htdocs/test_db-master/
+    Lancer dans le terminal :
+    cd /opt/lampp/htdocs/test_db-master
+    sudo /opt/lampp/bin/mysql -u root -p < employees.sql
+    sudo /opt/lampp/bin/mysql -u root -p
+    show databases;
+    use employees;
+    select * from departments;
+    
+(OK)2. STRUCTURER LES DOSSIERS :
+    Creer dans htdocs/test_db-master/ :
+test_db-master/
+├── Assets/ : images et style.css
+├── includes/ : connexion.php, deconnexion.php, fonctions.php
+├── PAGES/ :bootstrap + index.php, employes.php
+├── SQL/ : employees.sql et tous les autres.sql
