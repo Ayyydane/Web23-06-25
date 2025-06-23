@@ -33,7 +33,6 @@ function getEmployesParDepartement($dept_no) {
     ";
     $resultat = mysqli_query($bdd, $sql);
     $donnees = array();
-
     while ($ligne = mysqli_fetch_assoc($resultat)) {
         $donnees[] = $ligne;
     }
