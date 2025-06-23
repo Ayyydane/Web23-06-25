@@ -8,8 +8,7 @@
     show databases;
     use employees;
     select * from departments;
-
-
+    
 (OK)2. STRUCTURER LES DOSSIERS :
     Creer dans htdocs/test_db-master/ :
 test_db-master/
