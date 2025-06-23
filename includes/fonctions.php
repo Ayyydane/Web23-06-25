@@ -20,4 +20,25 @@ function getDepartementsAvecManager() {
     return $donnees;
 }
 
+
+function getEmployesParDepartement($dept_no) {
+    global $bdd;
+    $dept_no = mysqli_real_escape_string($bdd, $dept_no);
+    $sql = "
+        SELECT e.emp_no, e.first_name, e.last_name, e.hire_date
+        FROM dept_emp de
+        JOIN employees e ON de.emp_no = e.emp_no
+        WHERE de.dept_no = '$dept_no'
+        AND de.to_date = '9999-01-01'
+    ";
+    $resultat = mysqli_query($bdd, $sql);
+    $donnees = array();
+
+    while ($ligne = mysqli_fetch_assoc($resultat)) {
+        $donnees[] = $ligne;
+    }
+
+    return $donnees;
+}
+
 ?>
