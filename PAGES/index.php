@@ -37,5 +37,6 @@ $departements = getDepartementsAvecManager();
             ?>
         </tbody>
     </table>
+    <footer> 4212 et 4352</footer>
 </body>
 </html>
