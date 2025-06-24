@@ -165,5 +165,6 @@ $hasNext = ($offset + $limit) < $totalRows;
     }
     ?>
     <a href="index.php" class="btn btn-secondary mt-3">Retour à l'accueil</a>
+     <footer> 4212 et 4352</footer>
 </body>
 </html>
