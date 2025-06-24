@@ -39,5 +39,6 @@ require_once("../includes/fonctions.php");
         </div>
     </form>
     <a href="index.php" class="btn btn-secondary">Retour à l'accueil</a>
+    <footer> 4212 et 4352</footer>
 </body>
 </html>
