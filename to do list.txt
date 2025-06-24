@@ -45,28 +45,28 @@ fonctions.php :
    
 VERSION 2:
     (4212)employes.php:
-        - Recuperer tous les employes du departement donne via getEmployesParDepartement.
+        - Recuperer tous les employes du departement donne 
         - Afficher un tableau avec colonnes : Nom, Sexe, Date de naissance.
-        - Ajouter un lien cliquable sur chaque nom vers fiche_employe.php?emp_no=....
+        - Ajouter un lien cliquable sur chaque nom vers fiche_employe
         - Inclure un bouton "Retour à l'accueil" vers index.php.
 
     (4212)fiche_employe.php:
-        - Recuperer les details de l'employe via emp_no donne.
+        - Recuperer les details de l'employe 
         - Afficher les informations : Nom, Sexe, Date de naissance, Date d'embauche.
         - Afficher l'historique des salaires (montant, dates) depuis la table salaries.
         - Afficher l'historique des postes (titre, dates) depuis la table titles.
-        - Ajouter un bouton "Retour" vers employes.php?dept=....
+        - Ajouter un bouton "Retour" vers employes.php
 
     (4352)recherche.php:
         - Creer un formulaire avec champs : Nom employe, Departement (liste deroulante), age min, age max.
-        - Soumettre vers resultats_recherche.php.
+        - Met les resultats dans une autre page resultats_recherche.php.
 
     (4352)resultats_recherche.php:
         - Traiter les critères de recherche (nom, departement, age min/max).
         - Construire une requête SQL avec WHERE pour filtrer les employes.
-        - Utiliser LIMIT $offset, 20 pour afficher 20 lignes par page.
+        - Utiliser LIMIT , 20 pour afficher 20 lignes par page.
         - Calculer le nombre total d'enregistrements pour la pagination.
-        - Ajouter un lien "Suivant" si plus de resultats existent ($offset + 20 < $totalRows).
+        - Ajouter un lien "Suivant" si plus de resultats existent 
         - Ajouter un lien "Precedent" si page > 0.
         - Afficher les resultats dans un tableau : Nom, Sexe, Date de naissance, age.
         - Inclure un lien cliquable sur chaque nom vers fiche_employe.php.
@@ -75,5 +75,5 @@ VERSION 2:
 
     (4352)index.php:
         - Lister les departements avec code, nom, manager.
-        - Ajouter un lien "Voir" vers employes.php?dept=... pour chaque departement.
+        - Ajouter un lien "Voir" vers employes.php pour chaque departement.
         - Inclure un bouton "Rechercher des employes" vers recherche.php.
