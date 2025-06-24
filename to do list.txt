@@ -27,10 +27,55 @@ fonctions.php :
 
 
 4. PAGES
+     (4352) index.php:
+    -Liste tous les departements
+    -Affiche le nom du manager actuel
+    -Ajoute un bouton "Voir" : employes.php?dept=xxx
+
     (4212)employes.php:
     -Recupère tous les employes du departement donne
     -Affiche tableau (numero, nom, date embauche)
     -Bouton retour vers index
 
 5. CSS:
-    (4212 et 4352)-styliser les pages
+    (4212 et 4352)-styliser les pages 
+   (4352)body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+    (4352).container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #ffffffcc;
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+    (4352).btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(78, 0, 200, 0.3);
+}
+    (4352)table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+    (4352)thead th {
+    padding: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+    (4352)tbody tr:hover {
+    background-color: #e9ecef;
+}
+    (4352)a {
+    text-decoration: none;
+    color: #ffffff;
+}
