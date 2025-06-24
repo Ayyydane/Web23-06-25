@@ -5,7 +5,7 @@ if (isset($_GET['dept'])) {
     $dept_no = $_GET['dept'];
     $employes = getEmployesParDepartement($dept_no);
 } else {
-    echo "Aucun département sélectionné.";
+    echo "Aucun departement selectionne.";
     exit();
 }
 ?>
@@ -14,18 +14,18 @@ if (isset($_GET['dept'])) {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Employés du département</title>
+    <title>Employes du departement</title>
     <link href="../assets/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="container mt-5">
-    <h2>Employés du département <?= htmlspecialchars($dept_no) ?></h2>
+    <h2>Employes du departement <?= htmlspecialchars($dept_no) ?></h2>
     <a href="index.php" class="btn btn-secondary mb-3">⬅ Retour</a>
     <table class="table table-bordered table-hover">
         <thead class="table-dark">
             <tr>
-                <th>Numéro</th>
+                <th>Numero</th>
                 <th>Nom</th>
                 <th>Embauche le</th>
             </tr>
@@ -42,5 +42,6 @@ if (isset($_GET['dept'])) {
             ?>
         </tbody>
     </table>
+    <footer> 4212 et 4352</footer>
 </body>
 </html>
