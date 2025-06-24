@@ -32,3 +32,5 @@ fonctions.php :
     -Affiche tableau (numero, nom, date embauche)
     -Bouton retour vers index
 
+5. CSS:
+    (4212 et 4352)-styliser les pages
