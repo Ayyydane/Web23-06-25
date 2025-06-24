@@ -1,3 +1,4 @@
+VERSION1:
 (OK)1. INSTALLATION :
     Telecharger : https://github.com/datacharmer/test_db
     Extraire dans htdocs/test_db-master/
@@ -39,43 +40,40 @@ fonctions.php :
 
 5. CSS:
     (4212 et 4352)-styliser les pages 
-   (4352)body {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-    (4352).container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-    background-color: #ffffffcc;
-    backdrop-filter: blur(4px);
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-    (4352).btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(78, 0, 200, 0.3);
-}
-    (4352)table {
-    border-collapse: separate;
-    border-spacing: 0;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-}
-    (4352)thead th {
-    padding: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-    (4352)tbody tr:hover {
-    background-color: #e9ecef;
-}
-    (4352)a {
-    text-decoration: none;
-    color: #ffffff;
-}
+   
+   
+   
+VERSION 2:
+    (4212)employes.php:
+        - Recuperer tous les employes du departement donne via getEmployesParDepartement.
+        - Afficher un tableau avec colonnes : Nom, Sexe, Date de naissance.
+        - Ajouter un lien cliquable sur chaque nom vers fiche_employe.php?emp_no=....
+        - Inclure un bouton "Retour à l'accueil" vers index.php.
+
+    (4212)fiche_employe.php:
+        - Recuperer les details de l'employe via emp_no donne.
+        - Afficher les informations : Nom, Sexe, Date de naissance, Date d'embauche.
+        - Afficher l'historique des salaires (montant, dates) depuis la table salaries.
+        - Afficher l'historique des postes (titre, dates) depuis la table titles.
+        - Ajouter un bouton "Retour" vers employes.php?dept=....
+
+    (4352)recherche.php:
+        - Creer un formulaire avec champs : Nom employe, Departement (liste deroulante), age min, age max.
+        - Soumettre vers resultats_recherche.php.
+
+    (4352)resultats_recherche.php:
+        - Traiter les critères de recherche (nom, departement, age min/max).
+        - Construire une requête SQL avec WHERE pour filtrer les employes.
+        - Utiliser LIMIT $offset, 20 pour afficher 20 lignes par page.
+        - Calculer le nombre total d'enregistrements pour la pagination.
+        - Ajouter un lien "Suivant" si plus de resultats existent ($offset + 20 < $totalRows).
+        - Ajouter un lien "Precedent" si page > 0.
+        - Afficher les resultats dans un tableau : Nom, Sexe, Date de naissance, age.
+        - Inclure un lien cliquable sur chaque nom vers fiche_employe.php.
+        - Afficher un message si aucun resultat.
+        - Ajouter un bouton "Nouvelle recherche" vers recherche.php et "Retour" vers index.php.
+
+    (4352)index.php:
+        - Lister les departements avec code, nom, manager.
+        - Ajouter un lien "Voir" vers employes.php?dept=... pour chaque departement.
+        - Inclure un bouton "Rechercher des employes" vers recherche.php.
