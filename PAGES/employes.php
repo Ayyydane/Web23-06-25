@@ -50,3 +50,4 @@ $employees = getEmployesParDepartement($dept_no);
         <footer> 4212 et 4352</footer>
 </body>
 </html>
+
